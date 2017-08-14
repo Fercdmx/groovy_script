@@ -1,0 +1,5 @@
+encabezado 1,encabezado 2,encabezado 3,encabezado 4,encabezado 5
+dato1,dato 2,dato3,dato4,dato5
+dato11,datos22,dato33,dato44,dato55
+dato111,dato222,dato333,dato444,dato555
+dato1111,dato2222,dato3333,dato4444,dato5555
