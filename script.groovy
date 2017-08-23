@@ -42,4 +42,12 @@ def object = jsonSlurper.parseText(file)
     
     println object[0].(object[1].keySet()[2]) //Muestra el valor del key seleccionado para el objeto seleccionado
     
+    //Ejemplo que genera todos los insert
+    
+    for (i=0;i<object.size();i++){
+        def atributos=object[i].keySet().join(",")
+        def values=object[i].values().join(",")
+        println "INSERT INTO tabla ("+atributos+") VALUES ("+values+")"
+    }
+    
     
