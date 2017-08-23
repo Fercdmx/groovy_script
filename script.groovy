@@ -30,6 +30,8 @@ def object = jsonSlurper.parseText(file)
     
     println object[1].keySet() //Regresa la lista de key (encabezado)
     
+    println object[1].keySet().join(",") //Une la lista usando ","
+    
     println object[1].keySet()[1] //Regresa el key en la posición
     
     println object[1].size() //regresa el número de atributos del objeto
