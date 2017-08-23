@@ -1,0 +1,6 @@
+INSERT INTO tabla (encabezado1,encabezado2,encabezado3,encabezado4,encabezado5,encabezado6) VALUES (1,'dato2','dato3','dato4',5.0,'dato6')
+INSERT INTO tabla (encabezado1,encabezado2,encabezado3,encabezado4,encabezado5,encabezado6) VALUES (11,'datos22','dato33','dato44',55.0,'dato66')
+INSERT INTO tabla (encabezado1,encabezado2,encabezado3,encabezado4,encabezado5,encabezado6) VALUES (111,'dato222','dato333','dato444',555.0,'dato666')
+INSERT INTO tabla (encabezado1,encabezado2,encabezado3,encabezado4,encabezado5,encabezado6) VALUES (1111,'dato2222','dato3333','44F44',5555.0,'dato6666')
+INSERT INTO tabla (encabezado1,encabezado2,encabezado3,encabezado4,encabezado5,encabezado6) VALUES (11111,'dato22222','3333f3.0','dato44444',55555.0,'dato66666')
+INSERT INTO tabla (encabezado1,encabezado2,encabezado3,encabezado4,encabezado5,encabezado6) VALUES (111111,'dato222222','dato333333','dato444444',555555.0,'dato666666')

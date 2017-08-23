@@ -45,7 +45,7 @@ def object = jsonSlurper.parseText(file)
     
     
     //Ejemplo que genera todos los insert
-    
+def fileSql = new File("archivo.sql").withWriter{ writer ->
     for (i=0;i<object.size();i++){
         def atributos=object[i].keySet().join(",")
         for (j=0;j<object[i].size();j++)
@@ -56,5 +56,7 @@ def object = jsonSlurper.parseText(file)
             }
         def values=object[i].values().join(",")
         println "INSERT INTO tabla ("+atributos+") VALUES ("+values+")"
+        writer.writeLine "INSERT INTO tabla ("+atributos+") VALUES ("+values+")"
     }
+}
     
