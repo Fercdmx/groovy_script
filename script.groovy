@@ -6,24 +6,23 @@ for(i=0;i<array.length;i++){
     matriz[i]=array[i].split("[,]")
 }
 def file
-    file= "[ \n"
-    for(i=1;i<array.length;i++){
-        file=file + "    { \n"
-        for(j=0;j<matriz[i].length;j++){
-             file=file+ "        \""+ matriz[0][j]+"\":\""+matriz[i][j]+"\""
-             if (j!=(matriz[i].length-1))
-                 file=file+ ",\n"
-        }
-        file=file+ "\n"
-        file=file+ "    }"
-        if (i!=(array.length-1))
-            file=file+ ","
-         file=file+ "\n"
-    }
-    file=file+ "]"
-    
-    def jsonSlurper=new JsonSlurper()
-    def object = jsonSlurper.parseText(file)
+file = "[ \n"
+for(i=1;i<array.length;i++){
+    file = file + "    { \n"
+    for(j=0;j<matriz[i].length;j++){
+        file = file + "        \""+ matriz[0][j]+"\":\""+matriz[i][j]+"\""
+        if (j!=(matriz[i].length-1))
+            file = file + ",\n"
+     }
+     file = file + "\n"
+     file = file + "    }"
+     if (i!=(array.length-1))
+         file = file+ ","
+     file = file + "\n"
+}
+file=file+ "]"    
+def jsonSlurper=new JsonSlurper()
+def object = jsonSlurper.parseText(file)
     
 //Las siguientes son notas    
     

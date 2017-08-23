@@ -1,5 +1,5 @@
 encabezado1,encabezado2,encabezado3,encabezado4,encabezado5,encabezado6 
-dato1,dato 2,dato3,dato4,dato5,dato6
+dato1,dato2,dato3,dato4,dato5,dato6
 dato11,datos22,dato33,dato44,dato55,dato66
 dato111,dato222,dato333,dato444,dato555,dato666
 dato1111,dato2222,dato3333,dato4444,dato5555,dato6666
