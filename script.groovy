@@ -25,7 +25,7 @@ def jsonSlurper=new JsonSlurper()
 def object = jsonSlurper.parseText(file)
     
 //Las siguientes son notas    
-    
+  /*  
     println object.size() //regresa el número de objetos
     
     println object[1].keySet() //Regresa la lista de key (encabezado)
@@ -40,14 +40,21 @@ def object = jsonSlurper.parseText(file)
     
     println object[0].values()[1] //Muestra el valor seleccionado para el objeto seleccionado
     
-    println object[0].(object[1].keySet()[2]) //Muestra el valor del key seleccionado para el objeto seleccionado
+    println object[0].(object[1].keySet()[2]) //Muestra el valor del key seleccionado para el objeto seleccionado*/
+    
+    
     
     //Ejemplo que genera todos los insert
     
     for (i=0;i<object.size();i++){
         def atributos=object[i].keySet().join(",")
+        for (j=0;j<object[i].size();j++)
+            try{
+                Float.parseFloat(object[i].values()[j])
+            }catch(NumberFormatException e){
+                object[i].put(object[i].keySet()[j],"'"+object[i].values()[j]+"'")
+            }
         def values=object[i].values().join(",")
         println "INSERT INTO tabla ("+atributos+") VALUES ("+values+")"
     }
-    
     
